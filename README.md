@@ -1,7 +1,7 @@
 <h1>Calculadora criada com o propósito de aprender o básico da linguagem java</h1>
 
 <h4>Essa aqui é a tela inical do app</h4>
-<image src=("assets/for_README/tela_Principar")/>
+<image src=("assets/for_README/Tela_Principar.PNG")/>
 
 
 <h4>Aqui você insere os valores para o calculo.</h4>
