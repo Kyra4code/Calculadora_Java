@@ -3,7 +3,7 @@
 <h4>Essa aqui é a tela inical do app</h4>
 
 
-<h4Aqui você insere os valores para o calculo.</h4>
+<h4>Aqui você insere os valores para o calculo.</h4>
 
 
 <h4>Em seguida, na parte inferior na esquerda encontra-se checkbox para vc selecionar o tipo de cálculo</h4>
