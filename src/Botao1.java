@@ -7,5 +7,29 @@ public class Botao1 extends JButton {
         setLocation(20,20);
         setLayout(new FlowLayout());
         setBounds(200,200,100, 35);
+        addActionListener(e->{Clicked();});
+    }
+    public void Clicked(){
+        if(Main.Soma.isSelected()){
+            int x = Integer.parseInt(Main.textb1.getText());
+            int y = Integer.parseInt(Main.textb2.getText());
+            int result = x + y;
+            JOptionPane.showMessageDialog(null, "Resultado: " + result, "Resultado", JOptionPane.INFORMATION_MESSAGE);
+        } else if (Main.Sub.isSelected()) {
+            int x = Integer.parseInt(Main.textb1.getText());
+            int y = Integer.parseInt(Main.textb2.getText());
+            int result = x - y;
+            JOptionPane.showMessageDialog(null, "Resultado: " + result, "Resultado", JOptionPane.INFORMATION_MESSAGE);
+        } else if (Main.Multi.isSelected()) {
+            int x = Integer.parseInt(Main.textb1.getText());
+            int y = Integer.parseInt(Main.textb2.getText());
+            int result = x * y;
+            JOptionPane.showMessageDialog(null, "Resultado: " + result, "Resultado", JOptionPane.INFORMATION_MESSAGE);
+        }else if (Main.Divi.isSelected()) {
+            float x = Float.parseFloat(Main.textb1.getText());
+            float y = Float.parseFloat(Main.textb2.getText());
+            float result = x / y;
+            JOptionPane.showMessageDialog(null, "Resultado: " + result, "Resultado", JOptionPane.INFORMATION_MESSAGE);
+        }
     }
 }
