@@ -10,6 +10,7 @@ public class Main {
     public static checkbox2 Sub = new checkbox2("-");
     public static checkbox3 Multi = new checkbox3("x");
     public static checkbox4 Divi = new checkbox4("/");
+    public static ComboBox Opcoes = new ComboBox();
 
     public static void main(String[] args) {
 
@@ -22,6 +23,7 @@ public class Main {
         app.add(Sub);
         app.add(Multi);
         app.add(Divi);
+        app.add(Opcoes);
         app.add(b1);
         app.add(textb1);
         app.add(textb2);
