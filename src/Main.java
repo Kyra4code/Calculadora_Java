@@ -15,7 +15,9 @@ public class Main {
 
         Image iconApp = new ImageIcon(("./assets/image/icon.png")).getImage();
         Botao1 b1 = new Botao1();
+        Titulo titulo = new Titulo();
 
+        app.add(titulo);
         app.add(Soma);
         app.add(Sub);
         app.add(Multi);
@@ -27,6 +29,7 @@ public class Main {
         app.setLayout(null);
         app.setVisible(true);
         app.setIconImage(iconApp);
+        app.setResizable(false);
         app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
