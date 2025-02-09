@@ -6,10 +6,6 @@ public class Main {
     public static JFrame app = new JFrame("Meu app teste");
     public static TextBox1 textb1 = new TextBox1();
     public static TextBox2 textb2 = new TextBox2();
-    public static checkbox1 Soma = new checkbox1("+");
-    public static checkbox2 Sub = new checkbox2("-");
-    public static checkbox3 Multi = new checkbox3("x");
-    public static checkbox4 Divi = new checkbox4("/");
     public static ComboBox Opcoes = new ComboBox();
 
     public static void main(String[] args) {
@@ -19,10 +15,6 @@ public class Main {
         Titulo titulo = new Titulo();
 
         app.add(titulo);
-        app.add(Soma);
-        app.add(Sub);
-        app.add(Multi);
-        app.add(Divi);
         app.add(Opcoes);
         app.add(b1);
         app.add(textb1);
