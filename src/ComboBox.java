@@ -11,5 +11,17 @@ public class ComboBox extends JComboBox{
         addItem("Raiz");
         setSize(new Dimension(20,20));
         setBounds(220, 280, 115, 20);
+
+        addActionListener(e->{
+            if(getSelectedItem() == "Raiz"){
+                Main.textb2.setEnabled(false);
+                Main.textb2.setEditable(false);
+            }else{
+                Main.textb2.setEditable(true);
+                Main.textb2.setEnabled(true);
+            }
+        });
+
+        
     }
 }

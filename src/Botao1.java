@@ -18,41 +18,47 @@ public class Botao1 extends JButton {
         }
 
         /*-----------------------------------------------------------------------------------------------------------------*/
-        if(Main.Opcoes.getSelectedItem() == "Somar"){
-            int x = Integer.parseInt(Main.textb1.getText());
-            int y = Integer.parseInt(Main.textb2.getText());
-            int result = x + y;
-            JOptionPane.showMessageDialog(null, "Resultado: " + result, "Resultado", JOptionPane.INFORMATION_MESSAGE);
-        }
-        else if (Main.Opcoes.getSelectedItem() == "Subtrair") {
-            int x = Integer.parseInt(Main.textb1.getText());
-            int y = Integer.parseInt(Main.textb2.getText());
-            int result = x - y;
-            JOptionPane.showMessageDialog(null, "Resultado: " + result, "Resultado", JOptionPane.INFORMATION_MESSAGE);
-        }
-        else if (Main.Opcoes.getSelectedItem() == "Multiplicar") {
-            int x = Integer.parseInt(Main.textb1.getText());
-            int y = Integer.parseInt(Main.textb2.getText());
-            int result = x * y;
-            JOptionPane.showMessageDialog(null, "Resultado: " + result, "Resultado", JOptionPane.INFORMATION_MESSAGE);
-        }
-        else if (Main.Opcoes.getSelectedItem() == "Dividir") {
-            float x = Float.parseFloat(Main.textb1.getText());
-            float y = Float.parseFloat(Main.textb2.getText());
-            float result = x / y;
-            JOptionPane.showMessageDialog(null, "Resultado: " + result, "Resultado", JOptionPane.INFORMATION_MESSAGE);
-        }
-        else if(Main.Opcoes.getSelectedItem() == "Elevar"){
-            double x = Double.parseDouble(Main.textb1.getText());
-            double y = Double.parseDouble(Main.textb2.getText());
-            double result = Math.pow(x, y);;
-            JOptionPane.showMessageDialog(null, "Resultado: " + result, "Resultado", JOptionPane.INFORMATION_MESSAGE);
-        }
-        else if(Main.Opcoes.getSelectedItem() == "Raiz"){
-            Main.textb2.setEditable(false);
-            Main.textb2.setText("");
-            double x = Double.parseDouble(Main.textb1.getText());
-            double result = Math.sqrt(x);
+        String text = Main.Opcoes.getSelectedItem().toString();
+        switch (text){
+            case "Somar":
+                int x = Integer.parseInt(Main.textb1.getText());
+                int y = Integer.parseInt(Main.textb2.getText());
+                int result = x + y;
+                JOptionPane.showMessageDialog(null, "Resultado: " + result, "Resultado", JOptionPane.INFORMATION_MESSAGE);x = y = result = 0;
+                break;
+            case "Subtrair":
+                x = Integer.parseInt(Main.textb1.getText());
+                y = Integer.parseInt(Main.textb2.getText());
+                result = x - y;
+                JOptionPane.showMessageDialog(null, "Resultado: " + result, "Resultado", JOptionPane.INFORMATION_MESSAGE);
+                break;
+            case "Multiplicar":
+                x = Integer.parseInt(Main.textb1.getText());
+                y = Integer.parseInt(Main.textb2.getText());
+                result = x * y;
+                JOptionPane.showMessageDialog(null, "Resultado: " + result, "Resultado", JOptionPane.INFORMATION_MESSAGE);
+                break;
+            case "Dividir":
+                double x2 = Double.parseDouble(Main.textb1.getText());
+                double y2 = Double.parseDouble(Main.textb2.getText());
+                double result2 = x2 / y2;
+                JOptionPane.showMessageDialog(null, "Resultado: " + result2, "Resultado", JOptionPane.INFORMATION_MESSAGE);
+                break;
+            case "Elevar":
+                x2 = Double.parseDouble(Main.textb1.getText());
+                y2 = Double.parseDouble(Main.textb2.getText());
+                result2 = Math.pow(x2, y2);
+                JOptionPane.showMessageDialog(null, "Resultado: " + result2, "Resultado", JOptionPane.INFORMATION_MESSAGE);
+                break;
+            case "Raiz":
+                x2 = Double.parseDouble(Main.textb1.getText());
+                result2 = Math.sqrt(x2);
+                JOptionPane.showMessageDialog(null, "Resultado: " + result2, "Resultado", JOptionPane.INFORMATION_MESSAGE);
+                break;
+            default:
+                JOptionPane.showMessageDialog(null,"Não foi possível compreender");
+                break;
+
         }
     }
 }
