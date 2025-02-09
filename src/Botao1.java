@@ -1,3 +1,4 @@
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -10,6 +11,9 @@ public class Botao1 extends JButton {
         addActionListener(e->{Clicked();});
     }
     public void Clicked(){
+        if(Main.textb2.getText().getBytes().length == 0 || Main.textb2.getText().getBytes().length == 0){
+            JOptionPane.showMessageDialog(null,"Por favor, preencha os campos");
+        }
         if(Main.Soma.isSelected()){
             int x = Integer.parseInt(Main.textb1.getText());
             int y = Integer.parseInt(Main.textb2.getText());

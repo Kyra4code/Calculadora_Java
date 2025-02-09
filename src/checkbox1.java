@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
+
 public class checkbox1 extends JCheckBox {
     public checkbox1(String text) {
         super(text);
@@ -12,9 +13,10 @@ public class checkbox1 extends JCheckBox {
     }
     public void action(){
         if(isSelected()){
-            Main.Sub.setSelected(false);
-            Main.Multi.setSelected(false);
-            Main.Divi.setSelected(false);
+            //Main.Sub.setSelected(false);
+            //Main.Multi.setSelected(false);
+            //Main.Divi.setSelected(false);
+
         }
     }
 }
