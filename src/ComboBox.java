@@ -7,8 +7,8 @@ public class ComboBox extends JComboBox{
         addItem("Subtrair");
         addItem("Multiplicar");
         addItem("Dividir");
- //     addItem("Elevar");
- //     addItem("Raiz");
+        addItem("Elevar");
+        addItem("Raiz");
         setSize(new Dimension(20,20));
         setBounds(220, 280, 115, 20);
     }
