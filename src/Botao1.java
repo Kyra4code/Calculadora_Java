@@ -1,3 +1,4 @@
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -10,22 +11,25 @@ public class Botao1 extends JButton {
         addActionListener(e->{Clicked();});
     }
     public void Clicked(){
-        if(Main.Soma.isSelected()){
+        if(Main.textb2.getText().getBytes().length == 0 || Main.textb2.getText().getBytes().length == 0){
+            JOptionPane.showMessageDialog(null,"Por favor, preencha os campos");
+        }
+        if(Main.Opcoes.getSelectedItem() == "Somar"){
             int x = Integer.parseInt(Main.textb1.getText());
             int y = Integer.parseInt(Main.textb2.getText());
             int result = x + y;
             JOptionPane.showMessageDialog(null, "Resultado: " + result, "Resultado", JOptionPane.INFORMATION_MESSAGE);
-        } else if (Main.Sub.isSelected()) {
+        } else if (Main.Opcoes.getSelectedItem() == "Subtrair") {
             int x = Integer.parseInt(Main.textb1.getText());
             int y = Integer.parseInt(Main.textb2.getText());
             int result = x - y;
             JOptionPane.showMessageDialog(null, "Resultado: " + result, "Resultado", JOptionPane.INFORMATION_MESSAGE);
-        } else if (Main.Multi.isSelected()) {
+        } else if (Main.Opcoes.getSelectedItem() == "Multiplicar") {
             int x = Integer.parseInt(Main.textb1.getText());
             int y = Integer.parseInt(Main.textb2.getText());
             int result = x * y;
             JOptionPane.showMessageDialog(null, "Resultado: " + result, "Resultado", JOptionPane.INFORMATION_MESSAGE);
-        }else if (Main.Divi.isSelected()) {
+        }else if (Main.Opcoes.getSelectedItem() == "Dividir") {
             float x = Float.parseFloat(Main.textb1.getText());
             float y = Float.parseFloat(Main.textb2.getText());
             float result = x / y;
